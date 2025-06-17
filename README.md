@@ -30,7 +30,6 @@ Bienvenido a mi perfil de GitHub. Soy Pedro Mariano Cereghetti, estudiante de 4�
 ---
 
 ## 📫 Contacto
-- 📱 +54 9 260 4826772
 - 📧 pedrocerega@gmail.com
 - 🔗 [LinkedIn](https://www.linkedin.com/in/pedro-cereghetti-48448824a/)
 - 🌐 [Portfolio](https://portfolio2-jade-xi.vercel.app/)
