@@ -25,29 +25,15 @@ Bienvenido a mi perfil de GitHub. Soy Pedro Mariano Cereghetti, estudiante de 4�
 - Hibernate, JWT, Swagger
 - SQL, MySQL, MariaDB
 - Git, Maven, Postman
-- HTML, React (nivel inicial)
-
----
-
-## 💼 Experiencia
-
-### 🔹 No Country
-**Desarrollador Backend**
-- Oct 2024 - Dic 2024: Desarrollo de app web de música con Java 21, Spring Boot 3, JPA, Flyway, etc.
-- Jun 2024 - Ago 2024: Backend app web con Spring Cloud (OpenFeign, Gateway), Hibernate y JWT
-- Feb 2024 - May 2024: Primer experiencia fullstack con Java 17, Spring y React
-
-### 🔹 Kodland
-**Profesor de Programación**
-- Ene 2023 - Oct 2023: Enseñanza de programación y seguimiento de estudiantes/clientes
+- React (nivel inicial)
 
 ---
 
 ## 📫 Contacto
 - 📱 +54 9 260 4826772
 - 📧 pedrocerega@gmail.com
-- 🔗 [LinkedIn](https://www.linkedin.com/in/pedrocereghetti-48448824a)
-- 🌐 [Portfolio](https://pedrocere.github.io/)
+- 🔗 [LinkedIn](https://www.linkedin.com/in/pedro-cereghetti-48448824a/)
+- 🌐 [Portfolio](https://portfolio2-jade-xi.vercel.app/)
 
 ---
 
