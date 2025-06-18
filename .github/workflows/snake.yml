@@ -16,8 +16,8 @@ jobs:
           github_user_name: PedroCere
           github_token: ${{ secrets.GITHUB_TOKEN }}
           outputs: |
-            dist/github-contribution-grid-snake.svg
             dist/github-contribution-grid-snake-dark.svg?palette=github-dark
+            dist/github-contribution-grid-snake.svg
 
       - name: Show dist contents
         run: ls -l dist/
