@@ -35,11 +35,6 @@ Bienvenido a mi perfil de GitHub. Soy Pedro Mariano Cereghetti, estudiante de 4Â
 - ğŸŒ [Portfolio](https://portfolio2-jade-xi.vercel.app/)
 
 ---
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/PedroCere/PedroCere/output/github-snake-dark.svg" />
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/PedroCere/PedroCere/output/github-snake.svg" />
-  <img alt="github-snake" src="https://raw.githubusercontent.com/PedroCere/PedroCere/output/github-snake.svg" />
-</picture>
 
 
 
