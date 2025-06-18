@@ -36,6 +36,9 @@ Bienvenido a mi perfil de GitHub. Soy Pedro Mariano Cereghetti, estudiante de 4�
 
 ---
 
+![GitHub Snake dark](https://raw.githubusercontent.com/PedroCere/PedroCere/output/github-contribution-grid-snake-dark.svg)
+
+
 
 
 ¡Gracias por visitar mi perfil! 🚀
