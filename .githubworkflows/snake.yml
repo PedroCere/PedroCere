@@ -1,21 +1,28 @@
-name: Generate Snake Animation
+name: Generate Snake SVGs (Light + Dark)
 
 on:
-  schedule:
-    - cron: "0 0 * * *"  
   workflow_dispatch:
+  schedule:
+    - cron: "0 0 * * *"
 
 jobs:
-  generate:
+  build_snake:
     runs-on: ubuntu-latest
+
     steps:
-      - uses: Platane/snk@v3
+      - name: Generate SVGs (Light & Dark)
+        uses: Platane/snk@v3
         with:
-          github_user_name: pedrocere
+          github_user_name: PedroCere
+          github_token: ${{ secrets.GITHUB_TOKEN }}
           outputs: |
             dist/github-contribution-grid-snake.svg
+            dist/github-contribution-grid-snake-dark.svg?palette=github-dark
 
-      - name: Push to the output branch
+      - name: Show dist contents
+        run: ls -l dist/
+
+      - name: Push to output branch
         uses: crazy-max/ghaction-github-pages@v3.1.0
         with:
           target_branch: output
