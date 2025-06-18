@@ -1,22 +1,26 @@
-name: Generate Snake Animation
+name: Generate Dark-Mode Snake
 
 on:
+  workflow_dispatch:
   schedule:
     - cron: "0 0 * * *"
-  workflow_dispatch:
 
 jobs:
-  generate:
+  build_snake:
     runs-on: ubuntu-latest
     steps:
-      - uses: Platane/snk@v3
+      - name: Generate both SVGs
+        uses: Platane/snk@v3
         with:
           github_user_name: PedroCere
           outputs: |
             dist/github-snake.svg
             dist/github-snake-dark.svg:palette=github-dark
 
-      - name: Push the SVGs to the output branch
+      - name: Show dist folder contents
+        run: ls -l dist/
+
+      - name: Push SVGs to output branch
         uses: crazy-max/ghaction-github-pages@v3.1.0
         with:
           target_branch: output
