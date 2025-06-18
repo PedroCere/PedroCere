@@ -1,4 +1,4 @@
-name: Generate Snake Dark Mode Only
+name: Generate Snake Light & Dark
 
 on:
   workflow_dispatch:
@@ -12,15 +12,24 @@ jobs:
       - name: Checkout repo
         uses: actions/checkout@v2
 
+      - name: Generate light snake
+        uses: Platane/snk/svg-only@v3
+        with:
+          github_user_name: ${{ github.repository_owner }}
+          outputs: dist/github-contribution-grid-snake.svg
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
       - name: Generate dark snake
         uses: Platane/snk/svg-only@v3
         with:
           github_user_name: ${{ github.repository_owner }}
-          outputs: dist/github-contribution-grid-snake-dark.svg?palette=github-dark
+          outputs: dist/github-contribution-grid-snake-dark.svg
+          palette: github-dark
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: List generated files
+      - name: List outputs
         run: ls -l dist/
 
       - name: Push to output branch
@@ -30,3 +39,4 @@ jobs:
           build_dir: dist
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
