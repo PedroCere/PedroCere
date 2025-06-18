@@ -1,4 +1,4 @@
-name: Generate Snake SVGs (Light + Dark)
+name: Generate Snake Dark Mode Only
 
 on:
   workflow_dispatch:
@@ -8,18 +8,19 @@ on:
 jobs:
   build_snake:
     runs-on: ubuntu-latest
-
     steps:
-      - name: Generate SVGs (Light & Dark)
-        uses: Platane/snk@v3
-        with:
-          github_user_name: PedroCere
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          outputs: |
-            dist/github-contribution-grid-snake.svg
-            dist/github-contribution-grid-snake-dark.svg?palette=github-dark
+      - name: Checkout repo
+        uses: actions/checkout@v2
 
-      - name: Show dist contents
+      - name: Generate dark snake
+        uses: Platane/snk/svg-only@v3
+        with:
+          github_user_name: ${{ github.repository_owner }}
+          outputs: dist/github-contribution-grid-snake-dark.svg?palette=github-dark
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: List generated files
         run: ls -l dist/
 
       - name: Push to output branch
